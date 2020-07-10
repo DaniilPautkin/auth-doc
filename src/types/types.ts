@@ -16,3 +16,9 @@ export type LoggedUserType = {
     iat: number
     exp: number
 }
+
+export type CardType = {
+    id: string
+    name: string
+    description: string
+}

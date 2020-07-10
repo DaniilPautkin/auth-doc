@@ -14,7 +14,7 @@ grid-template-columns: repeat(5, 1fr);
 
 export const StyledCard = styled.div`
 display: flex;
-width: 100px;
+width: 60px;
 word-break: break-all;
 flex-direction: column;
 align-items: center;

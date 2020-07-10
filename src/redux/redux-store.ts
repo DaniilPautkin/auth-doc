@@ -2,10 +2,12 @@ import { Action, applyMiddleware, combineReducers, compose, createStore } from '
 import { reducer as formReducer } from 'redux-form'
 import thunkMiddleware, { ThunkAction } from 'redux-thunk'
 import authReducer from './auth-reducer'
+import cardsReducer from './cards-reducer'
 
 let rootReducers = combineReducers({
     form: formReducer,
-    auth: authReducer
+    auth: authReducer,
+    cards: cardsReducer
 })
 
 let store = createStore(
