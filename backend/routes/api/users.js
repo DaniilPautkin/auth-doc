@@ -10,9 +10,6 @@ const validateLoginInput = require("../../validation/login");
 
 const User = require("../../models/User");
 const YEAR_IN_SECONDS = 31556926
-router.get("/", (req, res) => {
-    User.find().then(data => res.send(data))
-})
 
 router.post("/register", (req, res) => {
 

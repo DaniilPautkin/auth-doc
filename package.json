@@ -1,44 +1,61 @@
 {
-  "name": "auth-doc",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
-  },
-  "scripts": {
-    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "name": "auth-doc",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "@types/is-empty": "^1.2.0",
+        "@types/jest": "^24.0.0",
+        "@types/jwt-decode": "^2.2.1",
+        "@types/node": "^12.0.0",
+        "@types/react": "^16.9.0",
+        "@types/react-dom": "^16.9.0",
+        "@types/react-redux": "^7.1.9",
+        "@types/react-router-dom": "^5.1.5",
+        "@types/redux-form": "^8.2.7",
+        "@types/styled-components": "^5.1.1",
+        "antd": "^4.4.1",
+        "axios": "^0.19.2",
+        "is-empty": "^1.2.0",
+        "jwt-decode": "^2.2.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-infinite-scroll-component": "^5.0.5",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.1",
+        "redux": "^4.0.5",
+        "redux-form": "^8.3.6",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^5.1.1",
+        "typescript": "~3.7.2"
+    },
+    "scripts": {
+        "dev": "concurrently \"npm run client\" \"npm run server\"",
         "server": "cd backend && npm run dev",
         "client": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "concurrently": "^5.2.0"
-  }
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "concurrently": "^5.2.0"
+    }
 }
