@@ -10,6 +10,7 @@ import MainAuthContainer from './components/Main/MainContainer'
 import setAuthToken from './components/utils/setAuthToken'
 import { logoutUser, authActions } from './redux/auth-reducer'
 import jwt_decode from 'jwt-decode'
+import { StyledMainContainer } from './styles/app-styles'
 
 if (localStorage.jwtToken) {
   const token = localStorage.jwtToken
@@ -26,6 +27,7 @@ if (localStorage.jwtToken) {
 
 const App = () => {
     return (
+      <StyledMainContainer>
         <Provider store={store}>
             <BrowserRouter>
                 <Space>
@@ -51,6 +53,7 @@ const App = () => {
                 </Space>
             </BrowserRouter>
         </Provider>
+        </StyledMainContainer>
     )
 }
 
