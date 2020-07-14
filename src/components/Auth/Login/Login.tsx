@@ -6,13 +6,15 @@ import { reduxForm } from 'redux-form'
 import { ExistingUserType } from '../../../types/types'
 import { createField, GetStringKeys, RFInput } from '../../common/FormsControls'
 import { required } from '../../utils/validator/validator'
+import { StyledAuthContainer, AuthButtonsContainer, ConfirmAuthButton } from '../../../styles/auth-styles'
+import { StyledButton } from '../../../styles/app-styles'
 
 const LoginForm: React.FC<LoginFormValuesType & any> = ({
     error,
     handleSubmit,
 }) => {
     return (
-        <Space>
+        <StyledAuthContainer>
             <div>
                 {createField<LoginFormValuesTypeKeys>(
                     'Email: ',
@@ -35,16 +37,16 @@ const LoginForm: React.FC<LoginFormValuesType & any> = ({
                     'Password'
                 )}
             </div>
-            <Space>
+            <AuthButtonsContainer>
                 {error && <Text type="warning">{error}</Text>}
                 <Button type="link">
                     <NavLink to="/auth/register">Sing Up</NavLink>
                 </Button>
-                <Button onClick={handleSubmit} type="primary">
+                <ConfirmAuthButton onClick={handleSubmit}>
                     Sing In
-                </Button>
-            </Space>
-        </Space>
+                </ConfirmAuthButton>
+            </AuthButtonsContainer>
+        </StyledAuthContainer>
     )
 }
 
