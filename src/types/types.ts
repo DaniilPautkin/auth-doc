@@ -18,7 +18,6 @@ export type LoggedUserType = {
 }
 
 export type CardType = {
-    id: string
     name: string
     description: string
 }

@@ -1,4 +1,4 @@
-import { CardType } from "antd/lib/card";
+import { CardType } from "../types/types";
 import { InferActionsType } from './redux-store';
 
 const initialState = {
@@ -10,7 +10,7 @@ const authReducer = (state = initialState, action: ActionsType): typeof initialS
         case 'AUTH-DOC/CARDS/SET_CARDS':
             return {
                 ...state,
-                cards: action.cards
+                cards: state.cards.concat(action.cards)
             }
         default:
             return state
