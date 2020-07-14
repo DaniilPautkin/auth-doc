@@ -30,14 +30,11 @@ const App = () => {
       <StyledMainContainer>
         <Provider store={store}>
             <BrowserRouter>
-                <Space>
                     <Switch>
                         <Route
                             exact
                             path="/"
-                            render={() => <div> 
-                              <MainAuthContainer />
-                              </div>}
+                            render={() => <MainAuthContainer />}
                         />
                         <Route
                             exact
@@ -50,7 +47,6 @@ const App = () => {
                             render={() => <LoginContainer />}
                         />
                     </Switch>
-                </Space>
             </BrowserRouter>
         </Provider>
         </StyledMainContainer>

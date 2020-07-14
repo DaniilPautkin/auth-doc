@@ -6,13 +6,15 @@ import { reduxForm } from 'redux-form'
 import { NewUserType } from '../../../types/types'
 import { createField, GetStringKeys, RFInput } from '../../common/FormsControls'
 import { required } from '../../utils/validator/validator'
+import { StyledAuthContainer, AuthButtonsContainer, ConfirmAuthButton } from '../../../styles/auth-styles'
+import { StyledButton } from '../../../styles/app-styles'
 
 const RegisterForm: React.FC<RegisterFormValuesType & any> = ({
     error,
     handleSubmit,
 }) => {
     return (
-        <Space>
+        <StyledAuthContainer>
             <div>
                 {createField<RegisterFormValuesTypeKeys>(
                     'Fullname...',
@@ -57,16 +59,16 @@ const RegisterForm: React.FC<RegisterFormValuesType & any> = ({
                     'Confirm password: '
                 )}
             </div>
-            <Space>
+            <AuthButtonsContainer>
                 {error && <Text type="warning">{error}</Text>}
                 <Button type="link">
                     <NavLink to="/auth/login">Log In</NavLink>
                 </Button>
-                <Button onClick={handleSubmit} type="primary">
+                <ConfirmAuthButton onClick={handleSubmit}>
                     Register
-                </Button>
-            </Space>
-        </Space>
+                </ConfirmAuthButton>
+            </AuthButtonsContainer>
+        </StyledAuthContainer>
     )
 }
 
