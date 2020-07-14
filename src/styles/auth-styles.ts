@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Button } from 'antd'
 import { StyledButton } from './app-styles'
 
 export const StyledAuthContainer = styled.div`

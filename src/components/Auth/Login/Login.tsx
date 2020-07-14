@@ -1,13 +1,12 @@
-import { Button, Space } from 'antd'
+import { Button } from 'antd'
 import Text from 'antd/lib/typography/Text'
 import React from 'react'
 import { NavLink, Redirect } from 'react-router-dom'
 import { reduxForm } from 'redux-form'
+import { AuthButtonsContainer, ConfirmAuthButton, StyledAuthContainer } from '../../../styles/auth-styles'
 import { ExistingUserType } from '../../../types/types'
 import { createField, GetStringKeys, RFInput } from '../../common/FormsControls'
 import { required } from '../../utils/validator/validator'
-import { StyledAuthContainer, AuthButtonsContainer, ConfirmAuthButton } from '../../../styles/auth-styles'
-import { StyledButton } from '../../../styles/app-styles'
 
 const LoginForm: React.FC<LoginFormValuesType & any> = ({
     error,

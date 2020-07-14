@@ -1,4 +1,4 @@
-import { Button, Space } from 'antd'
+import { Button } from 'antd'
 import Text from 'antd/lib/typography/Text'
 import React from 'react'
 import { NavLink, Redirect, useHistory } from 'react-router-dom'
@@ -6,8 +6,11 @@ import { reduxForm } from 'redux-form'
 import { NewUserType } from '../../../types/types'
 import { createField, GetStringKeys, RFInput } from '../../common/FormsControls'
 import { required } from '../../utils/validator/validator'
-import { StyledAuthContainer, AuthButtonsContainer, ConfirmAuthButton } from '../../../styles/auth-styles'
-import { StyledButton } from '../../../styles/app-styles'
+import {
+    StyledAuthContainer,
+    AuthButtonsContainer,
+    ConfirmAuthButton,
+} from '../../../styles/auth-styles'
 
 const RegisterForm: React.FC<RegisterFormValuesType & any> = ({
     error,

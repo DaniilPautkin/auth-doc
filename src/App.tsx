@@ -1,6 +1,5 @@
 import 'antd/dist/antd.css'
 import React from 'react'
-import { Space } from 'antd'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import store from './redux/redux-store'
