@@ -3,6 +3,7 @@ import Text from 'antd/lib/typography/Text'
 import React from 'react'
 import { NavLink, Redirect } from 'react-router-dom'
 import { reduxForm } from 'redux-form'
+//@ts-ignore
 import { AuthButtonsContainer, ConfirmAuthButton, StyledAuthContainer } from '../../../styles/auth-styles'
 import { ExistingUserType } from '../../../types/types'
 import { createField, GetStringKeys, RFInput } from '../../common/FormsControls'
